@@ -138,7 +138,7 @@ formulario.addEventListener("submit", function(event) {
         "\n\nMensaje: " + mensaje;
 
     // Preparar el enlace de WhatsApp
-    const url = "https://wa.me/50252228132?text=" +
+    const url = "https://wa.me/50255496922?text=" +
         encodeURIComponent(texto);
 
     // Abrir WhatsApp en una nueva pestaña
