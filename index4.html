@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="estilo4.css">
     <style>
         /* Ocultar inicialmente todos los objetivos y metas */
-        .principal > div, .principal2 > div {
+        .principal>div,
+        .principal2>div {
             display: none !important;
         }
 
@@ -51,15 +52,16 @@
         }
 
         /* Estilo para mostrar el objetivo y meta seleccionados en el centro */
-        .principal.mostrar-activo, .principal2.mostrar-activo {
+        .principal.mostrar-activo,
+        .principal2.mostrar-activo {
             display: flex !important;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
 
-        .principal.mostrar-activo > div.activo-obj,
-        .principal2.mostrar-activo > div.activo-meta {
+        .principal.mostrar-activo>div.activo-obj,
+        .principal2.mostrar-activo>div.activo-meta {
             display: block !important;
             margin: 0 auto;
             transform: scale(1.05);
@@ -105,7 +107,8 @@
     <!-- MENSAJE DE BIENVENIDA Y BOTÓN PARA EMPEZAR EN ORDEN -->
     <div id="seccion-bienvenida" class="bienvenida-container">
         <h1>¡Bienvenido a MecaEnergyCorp!</h1>
-        <p>Acá encontrarás nuestros objetivos estratégicos y sus respectivas metas diseñadas para el desarrollo del transporte mecánico.</p>
+        <p>Acá encontrarás nuestros objetivos estratégicos y sus respectivas metas diseñadas para el desarrollo del
+            transporte mecánico.</p>
         <button class="btn-siguiente" onclick="siguientePaso()">Mostrar Primer Objetivo</button>
     </div>
 
@@ -237,17 +240,51 @@
             document.getElementById('seccion-bienvenida').style.display = 'block';
             document.querySelector('.principal').classList.remove('mostrar-activo');
             document.querySelector('.principal2').classList.remove('mostrar-activo');
-            
+
             document.querySelectorAll('.principal > div').forEach(el => el.classList.remove('activo-obj'));
             document.querySelectorAll('.principal2 > div').forEach(el => el.classList.remove('activo-meta'));
 
             document.getElementById('btn-reiniciar').style.display = 'none';
-            
+
             let btn = document.querySelector('.btn-siguiente');
             btn.textContent = 'Mostrar Primer Objetivo';
             document.getElementById('seccion-bienvenida').appendChild(btn);
         }
     </script>
+
+    <script>
+        window.difyChatbotConfig = {
+            token: '0h82F8h5NgQZmQiy',
+            baseUrl: 'https://udify.app',
+            routeSegment: 'agent',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+                // name: 'YOU CAN DEFINE USER NAME HERE',
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="0h82F8h5NgQZmQiy" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
 </body>
 
 </html>

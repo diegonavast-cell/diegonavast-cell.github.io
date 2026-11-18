@@ -27,7 +27,7 @@
             <a href="index4.html">Objetivos y Metas</a>
             <a href="index6.html">Proyecto</a>
             <a href="index7.html">Estrategias</a>
-            <a href="index5.html">Contactanos</a>   
+            <a href="index5.html">Contactanos</a>
             <a href="index.html" id="cerrarSesion">Cerrar sesión</a>
         </div>
 
@@ -68,6 +68,40 @@
         </section>
 
     </main>
+
+    <script>
+        window.difyChatbotConfig = {
+            token: '0h82F8h5NgQZmQiy',
+            baseUrl: 'https://udify.app',
+            routeSegment: 'agent',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+                // name: 'YOU CAN DEFINE USER NAME HERE',
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="0h82F8h5NgQZmQiy" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
 
     <div class="caja-naranja"></div>
 

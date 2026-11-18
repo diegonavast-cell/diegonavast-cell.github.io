@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,7 @@
     <header class="barra-navegacion">
 
         <a href="inicio.html" class="marca">
-            <img src="img/MecaEnergyCorp_ Conectamos destinos.png"
-                 alt="Logo MecaEnergyCorp">
+            <img src="img/MecaEnergyCorp_ Conectamos destinos.png" alt="Logo MecaEnergyCorp">
         </a>
 
         <nav class="enlaces">
@@ -89,11 +88,8 @@
 
                     <strong>@meca_energy_corp</strong>
 
-                    <a
-                        href="https://www.instagram.com/meca_energy_corp?psln=MzA5Y2c3NzEzdjF3"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="boton-tarjeta boton-instagram">
+                    <a href="https://www.instagram.com/meca_energy_corp?psln=MzA5Y2c3NzEzdjF3" target="_blank"
+                        rel="noopener noreferrer" class="boton-tarjeta boton-instagram">
 
                         Visitar Instagram
                     </a>
@@ -117,9 +113,7 @@
 
                     <strong>mecaenergycorp@gmail.com</strong>
 
-                    <a
-                        href="mailto:mecaenergycorp@gmail.com"
-                        class="boton-tarjeta">
+                    <a href="mailto:mecaenergycorp@gmail.com" class="boton-tarjeta">
 
                         Enviar correo
                     </a>
@@ -145,17 +139,12 @@
 
                     <div class="botones-dobles">
 
-                        <a
-                            href="tel:+502 5549 6922"
-                            class="boton-tarjeta">
+                        <a href="tel:+502 5549 6922" class="boton-tarjeta">
 
                             Llamar
                         </a>
 
-                        <a
-                            href="https://wa.me/50255496922"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="https://wa.me/50255496922" target="_blank" rel="noopener noreferrer"
                             class="boton-tarjeta boton-whatsapp">
 
                             WhatsApp
@@ -187,17 +176,13 @@
                     <div class="mapa">
                         <iframe
                             src="https://maps.google.com/maps?q=6ta%20avenida%20B%207-68%20Residenciales%20Eureka%2C%20zona%2021%2C%20Guatemala%2C%20Guatemala&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                            title="Ubicación de MecaEnergyCorp"
-                            loading="lazy"
+                            title="Ubicación de MecaEnergyCorp" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
 
-                    <a
-                        href="https://www.google.com/maps/search/?api=1&query=6ta%20avenida%20B%207-68%20Residenciales%20Eureka%2C%20zona%2021%2C%20Guatemala%2C%20Guatemala"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="boton-tarjeta">
+                    <a href="https://www.google.com/maps/search/?api=1&query=6ta%20avenida%20B%207-68%20Residenciales%20Eureka%2C%20zona%2021%2C%20Guatemala%2C%20Guatemala"
+                        target="_blank" rel="noopener noreferrer" class="boton-tarjeta">
 
                         Abrir en Google Maps
                     </a>
@@ -236,41 +221,22 @@
 
                 <div class="campo">
                     <label for="nombre">Nombre completo</label>
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Escribe tu nombre"
-                        required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
                 </div>
 
                 <div class="campo">
                     <label for="correo">Correo electrónico</label>
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        placeholder="ejemplo@correo.com"
-                        required>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
                 </div>
 
                 <div class="campo">
                     <label for="asunto">Asunto</label>
-                    <input
-                        type="text"
-                        id="asunto"
-                        name="asunto"
-                        placeholder="Motivo de tu consulta"
-                        required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu consulta" required>
                 </div>
 
                 <div class="campo">
                     <label for="mensaje">Mensaje</label>
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="5"
-                        placeholder="Escribe tu mensaje aquí..."
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
                         required></textarea>
                 </div>
 
@@ -311,9 +277,7 @@
     <!-- PIE DE PÁGINA -->
     <footer class="pie-pagina">
 
-        <img
-            src="img/MecaEnergyCorp_ Conectamos destinos.png"
-            alt="MecaEnergyCorp">
+        <img src="img/MecaEnergyCorp_ Conectamos destinos.png" alt="MecaEnergyCorp">
 
         <p>
             © 2026 MecaEnergyCorp. Todos los derechos reservados.
@@ -332,7 +296,7 @@
     <script>
         const formulario = document.getElementById("formularioContacto");
 
-        formulario.addEventListener("submit", function(event) {
+        formulario.addEventListener("submit", function (event) {
             event.preventDefault();
 
             const nombre = document.getElementById("nombre").value;
@@ -352,7 +316,41 @@
             window.open(url, "_blank");
         });
     </script>
-<script src="codigo.js"></script>
+
+    <script>
+        window.difyChatbotConfig = {
+            token: '0h82F8h5NgQZmQiy',
+            baseUrl: 'https://udify.app',
+            routeSegment: 'agent',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+                // name: 'YOU CAN DEFINE USER NAME HERE',
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="0h82F8h5NgQZmQiy" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
+    <script src="codigo.js"></script>
 </body>
 
 </html>
