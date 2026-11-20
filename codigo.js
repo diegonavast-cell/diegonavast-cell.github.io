@@ -1,5 +1,5 @@
 // --- REGISTRO DE USUARIO ---
-document.getElementById("btnRegistrar").addEventListener("click", function() {
+document.getElementById("btnRegistrar").addEventListener("click", function () {
     let usuario = document.getElementById("usuarioRegistro").value;
     let contrasena = document.getElementById("contrasenaRegistro").value;
     let confirmar = document.getElementById("confirmarRegistro").value;
@@ -16,7 +16,7 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    let usuarioExiste = usuarios.find(function(user) {
+    let usuarioExiste = usuarios.find(function (user) {
         return user.usuario == usuario;
     });
 
@@ -47,7 +47,7 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
 
 
 // --- INICIO DE SESIÓN ---
-document.getElementById("formLogin").addEventListener("submit", function(event) {
+document.getElementById("formLogin").addEventListener("submit", function (event) {
     event.preventDefault();
 
     let usuario = document.getElementById("username").value;
@@ -55,7 +55,7 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    let encontrado = usuarios.find(function(user) {
+    let encontrado = usuarios.find(function (user) {
         return user.usuario == usuario && user.contrasena == contrasena;
     });
 
@@ -110,7 +110,7 @@ if (botonCerrarSesion) {
 
 const formulario = document.getElementById("formularioContacto");
 
-formulario.addEventListener("submit", function(event) {
+formulario.addEventListener("submit", function (event) {
 
     // Evitar que la página se recargue
     event.preventDefault();
@@ -138,7 +138,7 @@ formulario.addEventListener("submit", function(event) {
         "\n\nMensaje: " + mensaje;
 
     // Preparar el enlace de WhatsApp
-    const url = "https://wa.me/50252228132?text=" +
+    const url = "https://wa.me/50255496922?text=" +
         encodeURIComponent(texto);
 
     // Abrir WhatsApp en una nueva pestaña
